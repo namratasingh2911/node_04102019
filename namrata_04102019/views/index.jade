@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Sign up
+  body
+    h1 Sign Up
+    form(method='get', action='/signup')
+      div
+        input(placeholder='First Name' required)
+        input(placeholder='Last Name' required )
+      div
+        input(placeholder='E-mail' )
+      div
+        input(placeholder='Password', min='8')
+      div
+        p At least 8 characters
+      div
+        input(placeholder='Phone number')
+      div
+        p Optional
+      div
+        input(type='checkbox', name='subscribe', value='check')
+        |  Subscribe to our newsletter
+      div
+        button(type='submit', onclick='signup') Sign Up
+      p
+        | By clicking Sign up you agree to our
+        | terms of service
